@@ -1,0 +1,58 @@
+baseURL = "https://example.com"
+title = "CSE 437 - Software Development Laboratory"
+theme = "etch"
+languageCode = "en-US"
+enableInlineShortcodes = true
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+
+[params]
+  description = "Your site description"
+  copyright = "Washington University in St. Louis // Emily Sheehan"
+  dark = "auto"
+  highlight = true
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "about"
+    title = "about"
+    url = "/"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "syllabus"
+    name = "syllabus"
+    title = "syllabus"
+    url = "/syllabus/"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "golden-path"
+    name = "golden path"
+    title = "golden-path"
+    url = "/golden-path/"
+    weight = 20
+  [[menu.main]]
+    identifier = "getting started"
+    name = "getting started"
+    title = "getting started"
+    url = "/getting-started/"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "more-resources"
+    name = "more-resources"
+    title = "more resources"
+    url = "/more-resources/"
+    weight = 20
+
+[permalinks]
+  about = "/:title/"
+
+[markup.goldmark.renderer]
+  # Allow HTML in Markdown
+  unsafe = true
+
+  [markup.tableOfContents]
+    ordered = true
